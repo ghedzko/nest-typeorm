@@ -1,0 +1,9 @@
+services:
+  mysql:
+    image: arm64v8/mysql
+    container_name: mysql
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 3306:3306
